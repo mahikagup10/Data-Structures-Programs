@@ -1,0 +1,17 @@
+//AlGO: SIMPLE QUEUE
+
+initialize front =0, rear =-1, queue[max]
+
+enque(ele)
+1. if rear is equal to max-1
+	full queue
+2. else
+	rear++
+	add ele in queue[rear]
+
+deque(ele)
+1. if front > rear 
+	empty queue
+2. else
+	remove ele from queue[front]
+	front++	

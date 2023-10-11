@@ -1,0 +1,44 @@
+Variation: 1  USING UNORDERED ARRAY
+enqueue: add to rear; update rear
+dequeu: search and delete ; update front
+	shift all elements by one place to left
+
+
+Variation: 2  USING ORDERED ARRAY
+enqueue: search and add
+dequeue: delete from front
+
+
+Variation: 3  USING UNORDERED LIST
+enqueue: insert at end; update rear
+dequeu: search and delete 
+	shift all elements by one place to left
+
+
+Variation: 4  USING ORDERED LIST
+enqueue: search and insert
+dequeue:  delete from front
+
+
+
+Variation:2
+
+1. define info structure
+2. define queue structure
+3. initialize w.r.t. single queue norms:f=0;r=-1
+
+enqueue:
+	if r==max-1----- full
+	else
+		i = r;
+		inc rear
+		while priority at q[i] >= ele priority and i>=0 //checkin and shifting from back
+			shift q[i] one place right
+			dec i
+		//after i we get a location where enqueue needs to be done
+		add ele at location i+1
+dequeue:
+	if f>r-----empty
+	else
+		ele = q[f]	
+		f++

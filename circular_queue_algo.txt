@@ -1,0 +1,18 @@
+//ALGO FOR CIRCULAR QUEUE
+
+Initialize: rear = max-1; front = max-1; q[]
+
+ENQUEUE(ELE)
+if (rear+1)%max == front
+	full
+else
+	rear = (rear+1)%max; 
+	q[rear] = ELE
+
+
+DEQUEUE(ELE)
+if rear == front
+	empty
+else
+	front = (front+1)%max; 
+	ELE = q[front]
