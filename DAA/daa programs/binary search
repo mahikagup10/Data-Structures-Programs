@@ -1,0 +1,25 @@
+//iterative binary search 
+//A in ascending order 
+//search key K
+//
+
+l<-0; r <- n-1 
+while l<=r do 
+    m <- greatest int((l+r)/2)
+    if K = A[m] return r<-m-1 
+    else l<-m+1
+return -1
+
+
+//recursive binary search 
+Algorithm binarysearchrec(A[l...r], K)
+if(l>r)
+    return 1
+m = [(l+r)/2]
+if(k = A[m])
+    return m
+if(k < A[m])
+    return binarysearchrec(A[l...m-1], K)
+else 
+    return binarysearchrec(A[m+1...r], K)
+

@@ -1,0 +1,5 @@
+ deleting root node:
+    - exchange with last leaf node 
+    - delete the last leaf 
+    - heapify the new tree 
+    

@@ -1,0 +1,6 @@
+product of n and m
+
+
+if n is even , nm = (nm)/2  *2
+
+if n is odd, nm = (n-1)/2 *2m +m 

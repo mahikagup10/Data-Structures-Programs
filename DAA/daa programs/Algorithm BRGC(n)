@@ -1,0 +1,5 @@
+Algorithm BRGC(n)
+//generaes recursively the binary reflected gray code of order n
+// output - list of all bit strings of length n comprising the gray code:
+
+if n=1 make list L containing bit strings 0 and 1 in the order

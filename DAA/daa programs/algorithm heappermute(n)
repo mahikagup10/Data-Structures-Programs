@@ -1,0 +1,18 @@
+algorithm heappermute(n)
+i/p: +ve int n & a global array A[1,n]
+o/p: All permutation of elements in A 
+if n = 1
+    write A 
+else 
+    for i<- 1 to n do
+        heappermute(n-1)
+        if n is odd 
+            swap a[1] and a[n]
+        else
+            swap a[i] and a[n]
+
+
+void heap_permute(n)
+{
+    
+}

@@ -1,0 +1,16 @@
+blanced red black tree 
+not as strictly balanced as avl tree 
+each node has color - red or black 
+log n time complexity 
+
+properties:
+    - color can be red or black 
+    - root node is black 
+    - every leaf is black 
+    - if red node ha 2 children, then both the children are always black. 
+    - if only one child exist, it should be black 
+    - for each node, any simple path from this node to its
+    - newly inserted nodes are made red  
+
+black height of this tree is the number of black nodes on a path from root to leaf. leaf  nodes are black. black height = height/2.
+number of nodes from node to farthest descendant leaf is no more than twice as the numbe =r of nodes to the nearest descendant leaf.

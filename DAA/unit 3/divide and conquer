@@ -1,0 +1,25 @@
+divide and conquer:
+    -solve the divided componenets recursively
+
+    ex. divAndConPower(a,n)
+        if n = 1;
+            return a;
+        else 
+            return divAndConPower(a,floor(n/2))*divAndConPower(a,ciel(n/2))
+
+    Complexity:
+    M(1) = 0
+    M(n) = m(n/2) + m(n/2) + 1
+         = 2m(n/2) +1
+         .
+         .
+         .
+         =2^i(M(n/2^i)) + 2^i -1 = n-1    {for n= 2^i}
+
+MASTER THEOREM:
+T(n) = aT(n/b) + f(n)
+- if f(n) belongs to theta(n^d),
+    if a<b^d, T(n) belongs to theta(n^d)
+    if a=b^d, T(n) belongs to theta(n^dlogn)
+    if a>b^d, T(n) belongs to theta(n^loga[baseb])
+    
